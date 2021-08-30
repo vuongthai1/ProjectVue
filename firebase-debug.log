@@ -1,0 +1,375 @@
+[debug] [2021-08-26T04:14:28.443Z] ----------------------------------------------------------------------
+[debug] [2021-08-26T04:14:28.445Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-08-26T04:14:28.446Z] CLI Version:   9.16.6
+[debug] [2021-08-26T04:14:28.446Z] Platform:      win32
+[debug] [2021-08-26T04:14:28.446Z] Node Version:  v14.17.5
+[debug] [2021-08-26T04:14:28.447Z] Time:          Thu Aug 26 2021 11:14:28 GMT+0700 (Indochina Time)
+[debug] [2021-08-26T04:14:28.447Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-26T04:14:28.456Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-26T04:14:28.457Z] > authorizing via signed-in user (vuong.thai22@student.passerellesnumeriques.org)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\Desktop\Testroute\meal-prep
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-08-26T04:14:39.003Z] > refreshing access token with scopes: []
+[debug] [2021-08-26T04:14:39.004Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-26T04:14:39.297Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Thu, 26 Aug 2021 04:14:38 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:14:39.326Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-08-26T04:14:39.890Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-08-26T04:14:39.890Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project meal-prep-887e1 (meal-prep) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-08-26T04:14:45.800Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-26T04:14:45.801Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-26T04:14:46.002Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Thu, 26 Aug 2021 04:14:45 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:14:46.038Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/meal-prep-887e1/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-08-26T04:14:47.301Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:14:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-08-26T04:14:47.304Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/meal-prep-887e1/locations/-/instances/meal-prep-887e1-default-rtdb  
+ 
+[debug] [2021-08-26T04:14:48.000Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:14:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-08-26T04:14:53.116Z] >>> HTTP REQUEST GET https://meal-prep-887e1-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json  
+ 
+[debug] [2021-08-26T04:14:53.388Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Thu, 26 Aug 2021 04:14:52 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  Database Rules for meal-prep-887e1-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2021-08-26T04:14:53.396Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/meal-prep-887e1/services/firestore.googleapis.com  
+ 
+[debug] [2021-08-26T04:14:54.686Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:14:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:14:54.687Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/meal-prep-887e1  
+ 
+[debug] [2021-08-26T04:14:55.114Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:14:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:14:55.114Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-08-26T04:14:55.115Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-26T04:14:55.115Z] > authorizing via signed-in user (vuong.thai22@student.passerellesnumeriques.org)
+[debug] [2021-08-26T04:14:55.116Z] [iam] checking project meal-prep-887e1 for permissions ["firebase.projects.get"]
+[debug] [2021-08-26T04:14:55.116Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/meal-prep-887e1:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-08-26T04:14:56.048Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:14:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=815","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-08-26T04:14:59.348Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/meal-prep-887e1/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-08-26T04:15:00.462Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:14:59 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:15:00.464Z] Found ruleset: projects/meal-prep-887e1/rulesets/706d34fb-4025-4777-830f-32334e0301e0
+[debug] [2021-08-26T04:15:00.464Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/meal-prep-887e1/rulesets/706d34fb-4025-4777-830f-32334e0301e0  
+ 
+[debug] [2021-08-26T04:15:01.511Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:15:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-08-26T04:15:03.982Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/meal-prep-887e1/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-08-26T04:15:03.983Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/meal-prep-887e1/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-08-26T04:15:04.635Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:15:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:15:04.870Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:15:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-08-26T04:15:04.880Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-26T04:15:04.881Z] > authorizing via signed-in user (vuong.thai22@student.passerellesnumeriques.org)
+[debug] [2021-08-26T04:15:04.881Z] [iam] checking project meal-prep-887e1 for permissions ["firebase.projects.get"]
+[debug] [2021-08-26T04:15:04.882Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/meal-prep-887e1:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-08-26T04:15:05.786Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:15:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=808","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:15:05.787Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/meal-prep-887e1/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-08-26T04:15:05.788Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/meal-prep-887e1/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-08-26T04:15:06.963Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:15:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:15:07.394Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:15:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-08-26T04:17:37.317Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-08-26T04:17:37.504Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-08-26T04:17:37.505Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.0.0","browserURLCompat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-compat.js","packageURL":"https://www.gstatic.com/firebasejs/9.0.0/firebase.tgz"},"live":{"version":"9.0","browserURLCompat":"https://www.gstatic.com/firebasejs/live/9.0/firebase-compat.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.0/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.0.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js","functions":"https://www.gstatic.com/firebasejs/9.0.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js","storage":"https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.0.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.0.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging.js","database":"https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js","app-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js","analytics-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics-compat.js","app-check-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-app-check-compat.js","auth-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js","functions-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-functions-compat.js","messaging-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compat.js","performance-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-performance-compat.js","remote-config-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-remote-config-compat.js","firestore-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js","storage-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-storage-compat.js","database-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js","firestore-lite":"https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-lite.js","messaging-sw":"https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-sw.js","auth-cordova":"https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-cordova.js","auth-react-native":"https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-react-native.js","performance-standalone":"https://www.gstatic.com/firebasejs/9.0.0/firebase-performance-standalone.js","performance-standalone-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-performance-standalone-compat.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Admin\Desktop\Testroute\meal-prep 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=397882344&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-08-26T04:17:54.640Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"f38fa0796817172380d6","redirect_uri":"http://localhost:9005","state":"397882344"}
+[debug] [2021-08-26T04:17:55.092Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Thu, 26 Aug 2021 04:17:54 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"76a342589cea5072474877d8269e75ba\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-b05e50fc.js gist.github.com/socket-worker-b05e50fc.js","x-github-request-id":"E554:547C:FC8FE:174B1A:612715F2"}
+[debug] [2021-08-26T04:17:55.101Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-08-26T04:17:55.577Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-08-26T04:17:55.577Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"vuongthai1","id":73775240,"node_id":"MDQ6VXNlcjczNzc1MjQw","avatar_url":"https://avatars.githubusercontent.com/u/73775240?v=4","gravatar_id":"","url":"https://api.github.com/users/vuongthai1","html_url":"https://github.com/vuongthai1","followers_url":"https://api.github.com/users/vuongthai1/followers","following_url":"https://api.github.com/users/vuongthai1/following{/other_user}","gists_url":"https://api.github.com/users/vuongthai1/gists{/gist_id}","starred_url":"https://api.github.com/users/vuongthai1/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/vuongthai1/subscriptions","organizations_url":"https://api.github.com/users/vuongthai1/orgs","repos_url":"https://api.github.com/users/vuongthai1/repos","events_url":"https://api.github.com/users/vuongthai1/events{/privacy}","received_events_url":"https://api.github.com/users/vuongthai1/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":4,"public_gists":0,"followers":0,"following":0,"created_at":"2020-11-01T09:04:16Z","updated_at":"2021-08-06T16:00:14Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":766,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as vuongthai1 
+[info] 
+[debug] [2021-08-26T04:18:43.388Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:18:43.793Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-26T04:18:43.793Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-26T04:18:47.595Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:18:47.997Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-26T04:18:47.997Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-26T04:18:48.913Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:18:49.313Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-26T04:18:49.314Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-26T04:18:49.463Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:18:49.864Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-26T04:18:49.864Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-26T04:18:55.593Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:18:56.040Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-26T04:18:56.041Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-26T04:18:58.185Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:18:58.597Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2021-08-26T04:18:58.597Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-26T04:19:14.839Z] >>> [apiv2][query] GET https://api.github.com/repos/vuongthai1/meal-prep/actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:19:15.245Z] <<< [apiv2][status] GET https://api.github.com/repos/vuongthai1/meal-prep/actions/secrets/public-key 404
+[debug] [2021-08-26T04:19:15.246Z] <<< [apiv2][body] GET https://api.github.com/repos/vuongthai1/meal-prep/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2021-08-26T04:19:24.374Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:19:24.862Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:19:25.025Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:19:25.182Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:19:25.230Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2021-08-26T04:19:25.230Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-26T04:19:25.260Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-26T04:19:25.260Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-26T04:19:25.336Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:19:25.430Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-26T04:19:25.431Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-26T04:19:25.576Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-26T04:19:25.577Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-26T04:19:25.734Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-08-26T04:19:25.734Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-26T04:19:26.834Z] >>> [apiv2][query] GET https://api.github.com/repos/Yes/actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:19:27.237Z] <<< [apiv2][status] GET https://api.github.com/repos/Yes/actions/secrets/public-key 404
+[debug] [2021-08-26T04:19:27.237Z] <<< [apiv2][body] GET https://api.github.com/repos/Yes/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-08-26T04:20:03.208Z] >>> [apiv2][query] GET https://api.github.com/repos/vuongthai1/meal-prep/actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:20:03.653Z] <<< [apiv2][status] GET https://api.github.com/repos/vuongthai1/meal-prep/actions/secrets/public-key 404
+[debug] [2021-08-26T04:20:03.653Z] <<< [apiv2][body] GET https://api.github.com/repos/vuongthai1/meal-prep/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2021-08-26T04:20:24.368Z] ----------------------------------------------------------------------
+[debug] [2021-08-26T04:20:24.371Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-08-26T04:20:24.371Z] CLI Version:   9.16.6
+[debug] [2021-08-26T04:20:24.371Z] Platform:      win32
+[debug] [2021-08-26T04:20:24.374Z] Node Version:  v14.17.5
+[debug] [2021-08-26T04:20:24.376Z] Time:          Thu Aug 26 2021 11:20:24 GMT+0700 (Indochina Time)
+[debug] [2021-08-26T04:20:24.376Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-26T04:20:24.388Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-26T04:20:24.389Z] > authorizing via signed-in user (vuong.thai22@student.passerellesnumeriques.org)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin\Desktop\Testroute\meal-prep
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-08-26T04:20:37.519Z] > refreshing access token with scopes: []
+[debug] [2021-08-26T04:20:37.520Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-26T04:20:37.746Z] <<< HTTP RESPONSE 200 {"date":"Thu, 26 Aug 2021 04:20:37 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:20:37.785Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-08-26T04:20:38.367Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-08-26T04:20:38.367Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project meal-prep-887e1 (meal-prep) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-08-26T04:20:40.148Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-26T04:20:40.148Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-26T04:20:40.333Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 26 Aug 2021 04:20:39 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:20:40.362Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/meal-prep-887e1/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-08-26T04:20:41.644Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:20:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-08-26T04:20:41.647Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/meal-prep-887e1/locations/-/instances/meal-prep-887e1-default-rtdb  
+ 
+[debug] [2021-08-26T04:20:42.343Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:20:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-08-26T04:20:44.294Z] >>> HTTP REQUEST GET https://meal-prep-887e1-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json  
+ 
+[debug] [2021-08-26T04:20:44.594Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Thu, 26 Aug 2021 04:20:44 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  Database Rules for meal-prep-887e1-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2021-08-26T04:20:44.603Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/meal-prep-887e1/services/firestore.googleapis.com  
+ 
+[debug] [2021-08-26T04:20:45.849Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:20:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:20:45.850Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/meal-prep-887e1  
+ 
+[debug] [2021-08-26T04:20:46.168Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:20:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:20:46.168Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-08-26T04:20:46.169Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-26T04:20:46.170Z] > authorizing via signed-in user (vuong.thai22@student.passerellesnumeriques.org)
+[debug] [2021-08-26T04:20:46.170Z] [iam] checking project meal-prep-887e1 for permissions ["firebase.projects.get"]
+[debug] [2021-08-26T04:20:46.171Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/meal-prep-887e1:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-08-26T04:20:47.112Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:20:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=825","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-08-26T04:20:48.806Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/meal-prep-887e1/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-08-26T04:20:49.906Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:20:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:20:49.908Z] Found ruleset: projects/meal-prep-887e1/rulesets/706d34fb-4025-4777-830f-32334e0301e0
+[debug] [2021-08-26T04:20:49.909Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/meal-prep-887e1/rulesets/706d34fb-4025-4777-830f-32334e0301e0  
+ 
+[debug] [2021-08-26T04:20:50.982Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:20:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-08-26T04:20:56.473Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/meal-prep-887e1/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-08-26T04:20:56.474Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/meal-prep-887e1/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-08-26T04:20:57.049Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:20:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:20:57.094Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:20:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with sample code
+[info] pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-08-26T04:20:57.108Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-26T04:20:57.109Z] > authorizing via signed-in user (vuong.thai22@student.passerellesnumeriques.org)
+[debug] [2021-08-26T04:20:57.109Z] [iam] checking project meal-prep-887e1 for permissions ["firebase.projects.get"]
+[debug] [2021-08-26T04:20:57.110Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/meal-prep-887e1:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-08-26T04:20:58.031Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:20:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=821","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:20:58.032Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/meal-prep-887e1/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-08-26T04:20:58.033Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/meal-prep-887e1/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-08-26T04:20:59.217Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:20:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:20:59.240Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:20:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-08-26T04:21:16.764Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-08-26T04:21:16.855Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-08-26T04:21:16.855Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.0.0","browserURLCompat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-compat.js","packageURL":"https://www.gstatic.com/firebasejs/9.0.0/firebase.tgz"},"live":{"version":"9.0","browserURLCompat":"https://www.gstatic.com/firebasejs/live/9.0/firebase-compat.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.0/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.0.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js","functions":"https://www.gstatic.com/firebasejs/9.0.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js","storage":"https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.0.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.0.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging.js","database":"https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js","app-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js","analytics-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics-compat.js","app-check-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-app-check-compat.js","auth-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js","functions-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-functions-compat.js","messaging-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-compat.js","performance-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-performance-compat.js","remote-config-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-remote-config-compat.js","firestore-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js","storage-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-storage-compat.js","database-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js","firestore-lite":"https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-lite.js","messaging-sw":"https://www.gstatic.com/firebasejs/9.0.0/firebase-messaging-sw.js","auth-cordova":"https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-cordova.js","auth-react-native":"https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-react-native.js","performance-standalone":"https://www.gstatic.com/firebasejs/9.0.0/firebase-performance-standalone.js","performance-standalone-compat":"https://www.gstatic.com/firebasejs/9.0.0/firebase-performance-standalone-compat.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Admin\Desktop\Testroute\meal-prep 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=883996399&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-08-26T04:21:19.643Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"12a3a68a5fadcba805bc","redirect_uri":"http://localhost:9005","state":"883996399"}
+[debug] [2021-08-26T04:21:20.124Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Thu, 26 Aug 2021 04:21:19 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"682755c68489acd0755c78b993e52340\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-b05e50fc.js gist.github.com/socket-worker-b05e50fc.js","x-github-request-id":"C48D:6D36:11C930:40A664:612716BF"}
+[debug] [2021-08-26T04:21:20.131Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-08-26T04:21:20.613Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-08-26T04:21:20.613Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"vuongthai1","id":73775240,"node_id":"MDQ6VXNlcjczNzc1MjQw","avatar_url":"https://avatars.githubusercontent.com/u/73775240?v=4","gravatar_id":"","url":"https://api.github.com/users/vuongthai1","html_url":"https://github.com/vuongthai1","followers_url":"https://api.github.com/users/vuongthai1/followers","following_url":"https://api.github.com/users/vuongthai1/following{/other_user}","gists_url":"https://api.github.com/users/vuongthai1/gists{/gist_id}","starred_url":"https://api.github.com/users/vuongthai1/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/vuongthai1/subscriptions","organizations_url":"https://api.github.com/users/vuongthai1/orgs","repos_url":"https://api.github.com/users/vuongthai1/repos","events_url":"https://api.github.com/users/vuongthai1/events{/privacy}","received_events_url":"https://api.github.com/users/vuongthai1/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":4,"public_gists":0,"followers":0,"following":0,"created_at":"2020-11-01T09:04:16Z","updated_at":"2021-08-06T16:00:14Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":766,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as vuongthai1 
+[info] 
+[debug] [2021-08-26T04:21:39.298Z] >>> [apiv2][query] GET https://api.github.com/repos/vuongthai1/meal-prep/actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:21:39.701Z] <<< [apiv2][status] GET https://api.github.com/repos/vuongthai1/meal-prep/actions/secrets/public-key 404
+[debug] [2021-08-26T04:21:39.702Z] <<< [apiv2][body] GET https://api.github.com/repos/vuongthai1/meal-prep/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2021-08-26T04:22:08.013Z] >>> [apiv2][query] GET https://api.github.com/repos/vuongthai1/Vue/actions/secrets/public-key type=owner
+[debug] [2021-08-26T04:22:08.451Z] <<< [apiv2][status] GET https://api.github.com/repos/vuongthai1/Vue/actions/secrets/public-key 200
+[debug] [2021-08-26T04:22:08.452Z] <<< [apiv2][body] GET https://api.github.com/repos/vuongthai1/Vue/actions/secrets/public-key {"key_id":"568250167242549743","key":"u2crB8E+vMFoScQsNJ1nGgJ76Z+vsuBUuzOaMhautWs="}
+[debug] [2021-08-26T04:22:08.455Z] >>> [apiv2][query] GET https://api.github.com/repos/vuongthai1/Vue [none]
+[debug] [2021-08-26T04:22:08.903Z] <<< [apiv2][status] GET https://api.github.com/repos/vuongthai1/Vue 200
+[debug] [2021-08-26T04:22:08.904Z] <<< [apiv2][body] GET https://api.github.com/repos/vuongthai1/Vue {"id":395655266,"node_id":"MDEwOlJlcG9zaXRvcnkzOTU2NTUyNjY=","name":"Vue","full_name":"vuongthai1/Vue","private":false,"owner":{"login":"vuongthai1","id":73775240,"node_id":"MDQ6VXNlcjczNzc1MjQw","avatar_url":"https://avatars.githubusercontent.com/u/73775240?v=4","gravatar_id":"","url":"https://api.github.com/users/vuongthai1","html_url":"https://github.com/vuongthai1","followers_url":"https://api.github.com/users/vuongthai1/followers","following_url":"https://api.github.com/users/vuongthai1/following{/other_user}","gists_url":"https://api.github.com/users/vuongthai1/gists{/gist_id}","starred_url":"https://api.github.com/users/vuongthai1/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/vuongthai1/subscriptions","organizations_url":"https://api.github.com/users/vuongthai1/orgs","repos_url":"https://api.github.com/users/vuongthai1/repos","events_url":"https://api.github.com/users/vuongthai1/events{/privacy}","received_events_url":"https://api.github.com/users/vuongthai1/received_events","type":"User","site_admin":false},"html_url":"https://github.com/vuongthai1/Vue","description":null,"fork":false,"url":"https://api.github.com/repos/vuongthai1/Vue","forks_url":"https://api.github.com/repos/vuongthai1/Vue/forks","keys_url":"https://api.github.com/repos/vuongthai1/Vue/keys{/key_id}","collaborators_url":"https://api.github.com/repos/vuongthai1/Vue/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/vuongthai1/Vue/teams","hooks_url":"https://api.github.com/repos/vuongthai1/Vue/hooks","issue_events_url":"https://api.github.com/repos/vuongthai1/Vue/issues/events{/number}","events_url":"https://api.github.com/repos/vuongthai1/Vue/events","assignees_url":"https://api.github.com/repos/vuongthai1/Vue/assignees{/user}","branches_url":"https://api.github.com/repos/vuongthai1/Vue/branches{/branch}","tags_url":"https://api.github.com/repos/vuongthai1/Vue/tags","blobs_url":"https://api.github.com/repos/vuongthai1/Vue/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/vuongthai1/Vue/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/vuongthai1/Vue/git/refs{/sha}","trees_url":"https://api.github.com/repos/vuongthai1/Vue/git/trees{/sha}","statuses_url":"https://api.github.com/repos/vuongthai1/Vue/statuses/{sha}","languages_url":"https://api.github.com/repos/vuongthai1/Vue/languages","stargazers_url":"https://api.github.com/repos/vuongthai1/Vue/stargazers","contributors_url":"https://api.github.com/repos/vuongthai1/Vue/contributors","subscribers_url":"https://api.github.com/repos/vuongthai1/Vue/subscribers","subscription_url":"https://api.github.com/repos/vuongthai1/Vue/subscription","commits_url":"https://api.github.com/repos/vuongthai1/Vue/commits{/sha}","git_commits_url":"https://api.github.com/repos/vuongthai1/Vue/git/commits{/sha}","comments_url":"https://api.github.com/repos/vuongthai1/Vue/comments{/number}","issue_comment_url":"https://api.github.com/repos/vuongthai1/Vue/issues/comments{/number}","contents_url":"https://api.github.com/repos/vuongthai1/Vue/contents/{+path}","compare_url":"https://api.github.com/repos/vuongthai1/Vue/compare/{base}...{head}","merges_url":"https://api.github.com/repos/vuongthai1/Vue/merges","archive_url":"https://api.github.com/repos/vuongthai1/Vue/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/vuongthai1/Vue/downloads","issues_url":"https://api.github.com/repos/vuongthai1/Vue/issues{/number}","pulls_url":"https://api.github.com/repos/vuongthai1/Vue/pulls{/number}","milestones_url":"https://api.github.com/repos/vuongthai1/Vue/milestones{/number}","notifications_url":"https://api.github.com/repos/vuongthai1/Vue/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/vuongthai1/Vue/labels{/name}","releases_url":"https://api.github.com/repos/vuongthai1/Vue/releases{/id}","deployments_url":"https://api.github.com/repos/vuongthai1/Vue/deployments","created_at":"2021-08-13T12:56:37Z","updated_at":"2021-08-13T13:17:36Z","pushed_at":"2021-08-13T13:17:33Z","git_url":"git://github.com/vuongthai1/Vue.git","ssh_url":"git@github.com:vuongthai1/Vue.git","clone_url":"https://github.com/vuongthai1/Vue.git","svn_url":"https://github.com/vuongthai1/Vue","homepage":null,"size":709,"stargazers_count":0,"watchers_count":0,"language":"HTML","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":{"key":"other","name":"Other","spdx_id":"NOASSERTION","url":null,"node_id":"MDc6TGljZW5zZTA="},"forks":0,"open_issues":0,"watchers":0,"default_branch":"master","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"network_count":0,"subscribers_count":1}
+[debug] [2021-08-26T04:22:08.908Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/meal-prep-887e1/serviceAccounts  
+ {"accountId":"github-action-395655266","serviceAccount":{"displayName":"GitHub Actions (vuongthai1/Vue)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository vuongthai1/Vue"}}
+[debug] [2021-08-26T04:22:10.148Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:22:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:22:10.150Z] >>> HTTP REQUEST GET https://iam.googleapis.com/v1/projects/meal-prep-887e1/serviceAccounts/github-action-395655266@meal-prep-887e1.iam.gserviceaccount.com  
+ 
+[debug] [2021-08-26T04:22:10.151Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/meal-prep-887e1:getIamPolicy  
+ 
+[debug] [2021-08-26T04:22:11.140Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:22:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:22:11.283Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:22:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1030","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:22:11.285Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/meal-prep-887e1:setIamPolicy  
+ {"policy":{"version":1,"etag":"BwXKbpy7iyQ=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-282802118718@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:meal-prep-887e1@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-mr7na@meal-prep-887e1.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-282802118718@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-282802118718@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-mr7na@meal-prep-887e1.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:vuong.thai22@student.passerellesnumeriques.org"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-395655266@meal-prep-887e1.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-395655266@meal-prep-887e1.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-395655266@meal-prep-887e1.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-395655266@meal-prep-887e1.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2021-08-26T04:22:12.683Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:22:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1298","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-26T04:22:12.684Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/meal-prep-887e1/serviceAccounts/github-action-395655266@meal-prep-887e1.iam.gserviceaccount.com/keys  
+ {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2021-08-26T04:22:14.013Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 26 Aug 2021 04:22:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] +  Created service account github-action-395655266 with Firebase Hosting admin permissions. 
+[debug] [2021-08-26T04:22:14.057Z] >>> [apiv2][query] PUT https://api.github.com/repos/vuongthai1/Vue/actions/secrets/FIREBASE_SERVICE_ACCOUNT_MEAL_PREP_887E1 [none]
+[debug] [2021-08-26T04:22:14.057Z] >>> [apiv2][body] PUT https://api.github.com/repos/vuongthai1/Vue/actions/secrets/FIREBASE_SERVICE_ACCOUNT_MEAL_PREP_887E1 {"encrypted_value":"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","key_id":"568250167242549743"}
+[debug] [2021-08-26T04:22:14.581Z] <<< [apiv2][status] PUT https://api.github.com/repos/vuongthai1/Vue/actions/secrets/FIREBASE_SERVICE_ACCOUNT_MEAL_PREP_887E1 201
+[debug] [2021-08-26T04:22:14.581Z] <<< [apiv2][body] PUT https://api.github.com/repos/vuongthai1/Vue/actions/secrets/FIREBASE_SERVICE_ACCOUNT_MEAL_PREP_887E1 {}
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_MEAL_PREP_887E1. 
+[info] i  You can manage your secrets at https://github.com/vuongthai1/Vue/settings/secrets. 
+[info] 
